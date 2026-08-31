@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { serve } from "hono/bun";
 import Database from "better-sqlite3";
 
 const app = new Hono();
@@ -82,4 +83,7 @@ app.get("/", (c) => {
   });
 });
 
-export default app;
+serve({ fetch: app.fetch, port: 3000 }, (info) => {
+  console.log(`✓ Server running at http://0.0.0.0:3000`);
+});
+

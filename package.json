@@ -1,0 +1,15 @@
+{
+  "name": "screener-data-api",
+  "version": "1.0.0",
+  "description": "REST API for SQLite data",
+  "main": "index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.tsx",
+    "start": "bun index.tsx"
+  },
+  "dependencies": {
+    "hono": "^4",
+    "better-sqlite3": "^9"
+  }
+}

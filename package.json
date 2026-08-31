@@ -1,7 +1,7 @@
 {
   "name": "screener-data-api",
   "version": "1.0.0",
-  "description": "REST API for SQLite data",
+  "description": "HTTP Gateway API for Screener SQLite database",
   "main": "index.tsx",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "bun index.tsx"
   },
   "dependencies": {
-    "hono": "^4",
-    "better-sqlite3": "^9"
+    "hono": "^4"
   }
 }
+
